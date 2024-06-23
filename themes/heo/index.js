@@ -126,7 +126,7 @@ const LayoutBase = props => {
         <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css" />
         <script>
           {`
-            let tianliGPT_postSelector = '#notion-article #main';
+            let tianliGPT_postSelector = '#article-wrapper #notion-article';
             let tianliGPT_key = 'BpWcdBi1Z3k';
           `}
         </script>
