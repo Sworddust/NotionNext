@@ -490,11 +490,11 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css">
       </Head>
       <body>
         <Main />
         <NextScript />
+        <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css">
         <script>
           {`
             let tianliGPT_postSelector = '#notion-article';
