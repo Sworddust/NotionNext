@@ -122,6 +122,12 @@ const LayoutBase = props => {
       {/* 页脚 */}
       <Footer title={siteConfig('TITLE')} />
     </div>
+      <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css">
+      <script>
+      let tianliGPT_postSelector = '#notion-article';
+      let tianliGPT_key = 'BpWcdBi1Z3k';
+      </script>
+      <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js"></script>
   )
 }
 
