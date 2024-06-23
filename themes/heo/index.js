@@ -41,7 +41,7 @@ import SearchNav from './components/SearchNav'
 import SideRight from './components/SideRight'
 import CONFIG from './config'
 import { Style } from './style'
-import { Html, Head, Main, NextScript } from 'next/document'
+import NextHead from 'next/head'
 
 /**
  * 基础布局 采用上中下布局，移动端使用顶部侧边导航栏
@@ -122,6 +122,16 @@ const LayoutBase = props => {
 
       {/* 页脚 */}
       <Footer title={siteConfig('TITLE')} />
+      <NextHead>
+        <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css" />
+        <script>
+          {`
+            let tianliGPT_postSelector = '#notion-article';
+            let tianliGPT_key = 'BpWcdBi1Z3k';
+          `}
+        </script>
+        <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js"></script>
+      </NextHead>
     </div>
   )
 }
@@ -484,26 +494,6 @@ const LayoutTagIndex = props => {
         })}
       </div>
     </div>
-  )
-}
-export default function Document() {
-  return (
-    <Html>
-      <Head>
-      </Head>
-      <body>
-        <Main />
-        <NextScript />
-        <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css">
-        <script>
-          {`
-            let tianliGPT_postSelector = '#notion-article';
-            let tianliGPT_key = 'BpWcdBi1Z3k';
-          `}
-        </script>
-        <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js"></script>
-      </body>
-    </Html>
   )
 }
 
